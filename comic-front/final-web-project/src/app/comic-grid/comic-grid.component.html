@@ -1,0 +1,12 @@
+<div class="grid-container">
+  <div *ngFor="let comic of comics" class="comic-unit">
+    <img src="{{ comic.image.original_url }}" alt="comic image" />
+    <p><b>Date added: </b>{{ comic.date_added }}</p>
+    <p>
+      <b>Comic name: </b>{{ comic.name ? comic.name : comic.volume.name }} #{{
+        comic.issue_number
+      }}
+    </p>
+    <button routerLink="/details/{{ comic.id }}">Details</button>
+  </div>
+</div>

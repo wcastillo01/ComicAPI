@@ -1,0 +1,12 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comic-unit {
+  flex: 1 1 25%;
+}
+
+.comic-unit > img {
+  width: 400px;
+  height: 600px;
+}
