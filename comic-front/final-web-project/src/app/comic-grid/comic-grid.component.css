@@ -1,12 +1,27 @@
 .grid-container {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .comic-unit {
   flex: 1 1 25%;
+}
+.comic-unit > p {
+  font-size: large;
 }
 
 .comic-unit > img {
   width: 400px;
   height: 600px;
+}
+
+#date-text {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+button {
+  margin-bottom: 20px;
 }

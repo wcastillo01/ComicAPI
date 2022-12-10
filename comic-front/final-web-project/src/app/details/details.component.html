@@ -1,27 +1,29 @@
-<div>
-  <img src="{{ comicDetail?.image?.original_url }}" alt="" />
-</div>
+<div class="details">
+  <div>
+    <img src="{{ comicDetail?.image?.original_url }}" alt="" />
+  </div>
+  <div class="details-info">
+    <div *ngIf="comicDetail?.character_credits?.length != 0">
+      <h1>Characters</h1>
+      <div *ngFor="let character of comicDetail?.character_credits">
+        <p>{{ character?.name }}</p>
+      </div>
+    </div>
 
-<div *ngIf="comicDetail?.character_credits?.length != 0">
-  <h1>Characters</h1>
-  <div *ngFor="let character of comicDetail?.character_credits">
-    <p>{{ character?.name }}</p>
+    <div *ngIf="comicDetail?.team_credits?.length != 0">
+      <h1>Teams</h1>
+
+      <div *ngFor="let teams of comicDetail?.team_credits">
+        <p>{{ teams?.name }}</p>
+      </div>
+    </div>
+
+    <div *ngIf="comicDetail?.location_credits?.length != 0">
+      <h1>Location</h1>
+      <div *ngFor="let location of comicDetail?.location_credits">
+        <p>{{ location?.name }}</p>
+      </div>
+    </div>
+    <button class="btn btn-dark" routerLink="/list">Home</button>
   </div>
 </div>
-
-<div *ngIf="comicDetail?.team_credits?.length != 0">
-  <h1>Teams</h1>
-
-  <div *ngFor="let teams of comicDetail?.team_credits">
-    <p>{{ teams?.name }}</p>
-  </div>
-</div>
-
-<div *ngIf="comicDetail?.location_credits?.length != 0">
-  <h1>Location</h1>
-  <div *ngFor="let location of comicDetail?.location_credits">
-    <p>{{ location?.name }}</p>
-  </div>
-</div>
-
-<button routerLink="/list">home</button>

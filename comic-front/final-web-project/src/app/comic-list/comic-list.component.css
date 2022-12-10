@@ -1,0 +1,23 @@
+.comic-listing {
+  padding: 30px;
+  display: flex;
+}
+
+.comic-info {
+  padding-left: 30px;
+}
+
+.comic-info > p {
+  font-size: larger;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.comic-listing > img {
+  width: 400px;
+  height: 600px;
+}
