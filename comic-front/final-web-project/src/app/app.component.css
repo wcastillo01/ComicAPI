@@ -1,9 +1,5 @@
-.navbar {
-  padding-bottom: 30px;
-}
-
-.bg-custom {
-  background-image: url(comic-bg.webp);
+.navbar-bg {
+  background-color: brown;
   background-size: 20%;
 }
 
@@ -12,24 +8,58 @@
   font-weight: bold;
   color: white;
   text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .nav-link:link {
   color: white;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0.5px 0.5px 1px black;
   font-weight: 700;
 }
 
 .nav-link:visited {
   color: white;
   background-color: transparent;
-  text-decoration: none;
+
 }
 
-.nav-link:hover {
-  color: blue;
+/* Button styling */
+.button-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  /* Size of the button */
+  height: 30px;
+  width: 30px;
+
+
+  /* Rounded corners */
+    border-radius: 15%;
+
+  /* Light gray color */
+    background-color: #cccccc;
+
+  /* Dark text color for contrast */
+  color: #333;
+  font-size: 10px;
+
+  transition: background-color 0.3s ease;
 }
 
-.nav-link:active {
-  color: white;
+/* Hover effect */
+.button-circle:hover {
+  background-color: #a9a9a9;
+  /* Darker gray on hover */
 }
