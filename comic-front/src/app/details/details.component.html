@@ -1,29 +1,50 @@
 <div class="details">
   <div>
-    <img src="{{ comicDetail?.image?.original_url }}" alt="" />
+    <img *ngIf="comicDetail?.image?.original_url; else noImage" [src]="comicDetail.image.original_url"
+      alt="Comic image" />
+    <ng-template #noImage>
+      <p><b>No image available</b></p>
+    </ng-template>
   </div>
+
   <div class="details-info">
-    <div *ngIf="comicDetail?.character_credits?.length != 0">
+    <!-- Characters Section -->
+    <div *ngIf="comicDetail?.character_credits?.length; else noCharacters">
       <h1>Characters</h1>
-      <div *ngFor="let character of comicDetail?.character_credits">
+      <div *ngFor="let character of comicDetail.character_credits">
         <p>{{ character?.name }}</p>
       </div>
     </div>
+    <ng-template #noCharacters>
+      <h1>Characters:</h1>
+      <p>No information here yet, reader!</p>
+    </ng-template>
 
-    <div *ngIf="comicDetail?.team_credits?.length != 0">
+    <!-- Teams Section -->
+    <div *ngIf="comicDetail?.team_credits?.length; else noTeams">
       <h1>Teams</h1>
-
-      <div *ngFor="let teams of comicDetail?.team_credits">
-        <p>{{ teams?.name }}</p>
+      <div *ngFor="let team of comicDetail.team_credits">
+        <p>{{ team?.name }}</p>
       </div>
     </div>
+    <ng-template #noTeams>
+      <h1>Teams:</h1>
+      <p>No information here yet, reader!</p>
+    </ng-template>
 
-    <div *ngIf="comicDetail?.location_credits?.length != 0">
+    <!-- Location Section -->
+    <div *ngIf="comicDetail?.location_credits?.length; else noLocation">
       <h1>Location</h1>
-      <div *ngFor="let location of comicDetail?.location_credits">
+      <div *ngFor="let location of comicDetail.location_credits">
         <p>{{ location?.name }}</p>
       </div>
     </div>
+    <ng-template #noLocation>
+      <h1>Location:</h1>
+      <p>No information here yet, reader!</p>
+    </ng-template>
+
+    <!-- Home Button -->
     <button class="btn btn-dark" routerLink="/list">Home</button>
   </div>
 </div>
