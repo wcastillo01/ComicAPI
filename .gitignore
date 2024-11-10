@@ -1,14 +1,25 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 node_modules
 .env
-
-.angular\cache
+.browserslistrc
 
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
+
+# Angular specific
+.angular/cache
+.angular/coverage
+
+# TypeScript specific
+*.tsbuildinfo
+*.tscache
+*.ts
+*.d.ts
+*.js.map
+*.js
 
 # Node
 /node_modules
