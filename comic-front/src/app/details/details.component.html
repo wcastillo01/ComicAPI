@@ -1,27 +1,27 @@
-<!-- <div class="detail-screen" [ngStyle]="{ 'background-image': 'url(' + comicDetail?.image?.original_url + ')' }"> -->
-  <!-- <div>
-    <svg aria-hidden="true"  height="20px"
-      role="presentation" viewBox="0 0 32 32" width="20px" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M25.333 22.667a3.96 3.963 0 00-2.597.981L10.595 16.71c.095-.468.095-.95 0-1.418l12.141-6.938a3.984 3.984 0 101.713-6.925 3.984 3.984 0 00-3.117 3.905c.003.238.027.476.071.71L9.262 12.982a4 4 0 100 6.039l12.142 6.938a3.996 3.996 0 103.929-3.292z">
-      </path>
-    </svg>
-  </div> -->
-  
-  <nav>
-    <button class="btn btn-dark" routerLink="/list">Home</button>
+<div class="detail-screen" [ngStyle]="{ 'background-image': 'url(' + comicDetail?.image?.original_url + ')' }">
+  <nav class="nav-bar"> 
+    <button routerLink="/home">
+      <svg class="share" height="1em" viewBox="0 0 32 32"><path fill="white" d="M18.667 2.667l1.714 1.714L8.762 16l11.619 11.619-1.714 1.714L5.334 16 18.667 2.667z"></path></svg>
+      Home
+    </button>
+     <button>
+      <svg height="20px" viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M25.333 22.667a3.96 3.963 0 00-2.597.981L10.595 16.71c.095-.468.095-.95 0-1.418l12.141-6.938a3.984 3.984 0 101.713-6.925 3.984 3.984 0 00-3.117 3.905c.003.238.027.476.071.71L9.262 12.982a4 4 0 100 6.039l12.142 6.938a3.996 3.996 0 103.929-3.292z">
+        </path>
+      </svg>
+     </button>
   </nav>
   
   <div class="details">
     <div>
-      <img class="comic-img" [src]="comicDetail.image.original_url" alt="Comic image" />
+      <img class="comic-img" [src]="comicDetail.image.original_url"/>
     </div>
   
     <div class="details-info">
-  
       <h2 class="comic-title">{{ comicDetail?.name }}</h2>
       <h5 class="title"> Published on:</h5>
-      <p class="module">{{ comicDetail.date_added.toString().slice(0, 10)}}</p>
+      <p class="module">{{ comicDetail.cover_date.toString().slice(0, 10)}}</p>
   
       <div *ngIf="comicDetail?.character_credits?.length; else noCharacters">
         <h5 class="title">Characters</h5>
@@ -51,7 +51,6 @@
         </div>
       </ng-template>
   
-      <!-- Location Section -->
       <div *ngIf="comicDetail?.location_credits?.length; else noLocation">
         <h5 class="title">Location</h5>
         <div class="module">
@@ -65,7 +64,6 @@
           <p>No information here yet, reader!</p>
         </div>
       </ng-template>
-  
     </div>
   </div>
-<!-- </div> -->
+</div> 

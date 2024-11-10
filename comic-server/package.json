@@ -1,19 +1,13 @@
 {
   "name": "comic-server",
   "version": "1.0.0",
-  "description": "Server for comic website",
   "main": "server.js",
   "scripts": {
+    "install": "npm install",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "API",
-    "Express",
-    "Comics"
-  ],
   "author": "wcastillo",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

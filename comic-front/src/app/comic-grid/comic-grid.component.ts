@@ -15,6 +15,6 @@ export class ComicGridComponent implements OnInit {
       this.comics = res.results;
       console.log(this.comics);
     });
-    // this.comicService.getComics();
+    this.comicService.getComics();
   }
 }
