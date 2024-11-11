@@ -1,25 +1,29 @@
-.navbar-bg {
-  background-color: brown;
-  background-size: 20%;
+.navbar {
+  background-color:#242424;
+  height: 92px;
+  justify-content: center;
+  gap: 10px;
 }
 
-#navbar-title {
+.navbar-title {
   font-size: xx-large;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 2px black;
   text-align: center;
+  text-decoration: none
 }
+
 
 .navbar-container {
   display: flex;
   justify-content: center;
 }
 
-.navbar-nav {
+.navbar-ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  
 }
 
 .nav-link:link {
