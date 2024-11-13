@@ -74,58 +74,44 @@
 
 /* ------------ */
 
+.new-section {
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
 
+  text-transform: uppercase ;
+  color: black;
+  font-weight: 800;
+  font-size: 1.5em;
 
-.navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.navbar-ul {
+.options {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  
+  list-style: none;
 }
 
-.nav-link:link {
-  color: white;
-  text-shadow: 0.5px 0.5px 1px black;
-  font-weight: 700;
-}
-
-.nav-link:visited {
-  color: white;
-  background-color: transparent;
-
-}
-
-/* Button styling */
-.button-circle {
+.option-item {
   display: flex;
   align-items: center;
   justify-content: center;
  
-  /* Size of the button */
+  border-radius: 5%;
   height: 30px;
-  width: 30px;
+  width: 70px;
+  gap: 4px;
 
-
-  /* Rounded corners */
-    border-radius: 15%;
-
-  /* Light gray color */
-    background-color: #cccccc;
-
-  /* Dark text color for contrast */
-  color: #333;
-  font-size: 10px;
+  color: black;
+  font-size: 16px;
 
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
-.button-circle:hover {
-  background-color: #a9a9a9;
-  /* Darker gray on hover */
+.option-item:hover {
+  background-color: #cccc;
+  text-decoration: none;
 }

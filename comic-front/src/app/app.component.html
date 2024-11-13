@@ -1,6 +1,11 @@
+<!-- Navbar component ============== -->
+
+
 <nav class="navbar">
   <a class="navbar-title" routerLink="home">The Comic Vault</a>
 </nav>
+
+<!-- Hero section component ============== -->
 
 <div class="hero-section">
   <div class="hero-section-info">
@@ -9,24 +14,23 @@
       favorite comic books. </p>
     <button class="hero-button"><span class="hero-button-span">Read a random one!</span></button>
   </div>
-  <!-- <img class="hero-image" src="https://cdn.marvel.com/content/1x/immortal-thor-desktop.jpg" alt="hero-section"> -->
 </div>
 
-<h3>Comics in vault</h3>
-<!-- 
-  <div class="navbar-container">
-   
+<!--News / options component ============== -->
 
-<ul class="navbar-nav">
-  <li class="nav-item">
-    <a class="nav-link button-circle" routerLink="home">Grid</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link button-circle" routerLink="list">List</a>
-  </li>
-</ul>
+<div class="new-section">
+  Comics in vault
+  <div class="option-container">
+    <ul class="options">
+      <li>
+        <a class="option-item" routerLink="home"><img class="option-icon" src="../assets/grid-icon.svg" alt=""> Grid</a>
+      </li>
+      <li>
+        <a class="option-item" routerLink="list"><img class="optio-icon" src="../assets/list-icon.svg" alt="">List</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-
-  </div> -->
 
 <router-outlet></router-outlet>
