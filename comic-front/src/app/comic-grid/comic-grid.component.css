@@ -33,6 +33,7 @@
   font-weight: 500;
   color: grey;
   font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
 }
 
 .comic-anchor {
