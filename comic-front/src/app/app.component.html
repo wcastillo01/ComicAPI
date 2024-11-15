@@ -7,14 +7,26 @@
 
 <!-- Hero section component ============== -->
 
+
 <div class="hero-section">
   <div class="hero-section-info">
     <h1 class="hero-section-title">Welcome to the Comic Vault</h1>
     <p class="hero-section-description">a place where you can find all about your
       favorite comic books. </p>
-    <button class="hero-button"><span class="hero-button-span">Read a random one!</span></button>
+    <button  (click)="randomComic()" class="hero-button"><span class="hero-button-span">Read a random one!</span></button>
   </div>
 </div>
+
+<!-- <script>
+  function randomComic() {
+    let randomNumber = Math.floor(Math.random() * 100) + 5;
+    console.log(randomNumber);
+    return randomNumber
+  }
+
+</script> -->
+
+
 
 <!--News / options component ============== -->
 
@@ -26,7 +38,7 @@
         <a class="option-item" routerLink="home"><img class="option-icon" src="../assets/grid-icon.svg" alt=""> Grid</a>
       </li>
       <li>
-        <a class="option-item" routerLink="list"><img class="optio-icon" src="../assets/list-icon.svg" alt="">List</a>
+        <a class="option-item" routerLink="list"><img class="option-icon" src="../assets/list-icon.svg" alt="">List</a>
       </li>
     </ul>
   </div>
