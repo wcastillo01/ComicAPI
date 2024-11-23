@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #242424;
+    height: 92px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar-title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
