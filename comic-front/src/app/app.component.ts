@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Comic vault';
-
+  
   constructor(private router: Router) { }
 
   randomComic(): void {

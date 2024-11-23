@@ -1,12 +1,10 @@
 <!-- Navbar component ============== -->
 
-
 <nav class="navbar">
   <a class="navbar-title" routerLink="home">The Comic Vault</a>
 </nav>
 
 <!-- Hero section component ============== -->
-
 
 <div class="hero-section">
   <div class="hero-section-info">
@@ -17,29 +15,4 @@
   </div>
 </div>
 
-<!--News / options component ============== -->
-
-<div class="new-section">
-  Comics in vault
-  <div class="option-container">
-    <ul class="options">
-      <li>
-        <a class="option-item" routerLink="home"><img class="option-icon" src="../assets/grid-icon.svg" alt=""> Grid</a>
-      </li>
-      <li>
-        <a class="option-item" routerLink="list"><img class="option-icon" src="../assets/list-icon.svg" alt="">List</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
 <router-outlet></router-outlet>
-
-<!-- <div class="load-more-section" *ngIf="hasMoreComics">
-  <button (click)="loadMore()" [disabled]="isLoading" class="hero-button">
-    <span class="hero-button-span">
-      {{ isLoading ? 'Loading...' : 'Load More Comics' }} 
-    </span>
-  </button>
-
-   -->

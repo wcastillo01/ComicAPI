@@ -8,6 +8,11 @@ import { Observable } from 'rxjs';
 export class ComicService {
   constructor(private HttpClient: HttpClient) {}
 
+  loadMoreComics(pageNumber: number): Observable<any> {
+    return this.HttpClient.get<any>('http://localhost:8000/comicPage?page=' + pageNumber);
+  }
+  
+
   getComics(): Observable<any> {
     return this.HttpClient.get<any>('http://localhost:8000/comics');
   }
