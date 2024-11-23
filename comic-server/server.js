@@ -12,7 +12,7 @@ app.use(cors());
 
 app.get("/comics", async (req, res) => {
   const response = await fetch(
-    `https://comicvine.gamespot.com/api/issues/?api_key=${process.env.API_KEY}&format=json`
+    `https://comicvine.gamespot.com/api/issues/?api_key=${process.env.API_KEY}&format=json&limit=16`
   );
   res.json(await response.json());
 });

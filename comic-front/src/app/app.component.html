@@ -17,17 +17,6 @@
   </div>
 </div>
 
-<!-- <script>
-  function randomComic() {
-    let randomNumber = Math.floor(Math.random() * 100) + 5;
-    console.log(randomNumber);
-    return randomNumber
-  }
-
-</script> -->
-
-
-
 <!--News / options component ============== -->
 
 <div class="new-section">
@@ -44,5 +33,13 @@
   </div>
 </div>
 
-
 <router-outlet></router-outlet>
+
+<!-- <div class="load-more-section" *ngIf="hasMoreComics">
+  <button (click)="loadMore()" [disabled]="isLoading" class="hero-button">
+    <span class="hero-button-span">
+      {{ isLoading ? 'Loading...' : 'Load More Comics' }} 
+    </span>
+  </button>
+
+   -->

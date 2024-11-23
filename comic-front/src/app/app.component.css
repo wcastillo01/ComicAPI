@@ -119,3 +119,14 @@
   background-color: #cccc;
   text-decoration: none;
 }
+
+/* Loadmore button ------------ */
+
+/* Load More Section Styles */
+.load-more-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
